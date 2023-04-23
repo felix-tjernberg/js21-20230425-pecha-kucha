@@ -1,0 +1,58 @@
+.margin-vertical {
+    --margin-amount: 1em;
+    margin-top: var(--margin-amount);
+    margin-bottom: var(--margin-amount);
+}
+.margin-horizontal {
+    --margin-amount: 1em;
+    margin-left: var(--margin-amount);
+    margin-right: var(--margin-amount);
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.font-size-500 {
+    font-size: calc(3rem + 1vw);
+}
+.font-size-400 {
+    font-size: calc(2.5rem + 1vw);
+}
+.font-size-300 {
+    font-size: calc(2rem + 1vw);
+}
+.font-size-200 {
+    font-size: calc(1.5rem + 1vw);
+}
+.font-size-100 {
+    font-size: calc(1rem + 1vw);
+}
+.font-size-50 {
+    font-size: calc(1rem + 0.5vw);
+}
+.text-center {
+    text-align: center;
+}
+
+.no-gap {
+    gap: 0;
+}
+.place-self-start {
+    place-self: start;
+}
+.height-auto {
+    height: auto !important;
+}
+
+.grid-stack {
+    display: grid;
+    isolation: isolate;
+}
+.grid-stack > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
