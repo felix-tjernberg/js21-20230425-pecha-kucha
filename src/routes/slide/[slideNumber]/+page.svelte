@@ -1,6 +1,6 @@
 <script lang="ts">
     import Slide1 from '$components/slides/1/1.svelte'
-    // import Slide2 from '$components/slides/1/1.svelte'
+    import Slide2 from '$components/slides/2/2.svelte'
     // import Slide3 from '$components/slides/3.svelte'
     // import Slide4 from '$components/slides/4.svelte'
     // import Slide5 from '$components/slides/5.svelte'
@@ -15,8 +15,8 @@
         switch (number) {
             case 1:
                 return Slide1
-            // case 2:
-            // return Slide2
+            case 2:
+                return Slide2
             // case 3:
             //     return Slide3
             // case 4:
@@ -35,6 +35,26 @@
             //     return Slide10
             // case 11:
             //     return Slide11
+            // case 12:
+            //     return Slide12
+            // case 13:
+            //     return Slide13
+            // case 14:
+            //     return Slide14
+            // case 15:
+            //     return Slide15
+            // case 16:
+            //     return Slide16
+            // case 17:
+            //     return Slide17
+            // case 18:
+            //     return Slide18
+            // case 19:
+            //     return Slide19
+            // case 20:
+            //     return Slide20
+            default:
+                return Slide1
         }
     }
 
