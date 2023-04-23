@@ -75,6 +75,7 @@
 
 <style>
     section {
+        padding: 5%;
         display: grid;
         height: 100%;
         width: 100%;
@@ -86,10 +87,6 @@
     }
     section::-webkit-scrollbar {
         display: none;
-    }
-    :global(section > *) {
-        max-width: 100%;
-        max-height: 100%;
     }
     .columns {
         --grid-template: repeat(var(--number-of-columns), 1fr);

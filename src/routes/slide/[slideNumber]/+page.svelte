@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Slide1 from '$components/slides/1.svelte'
-    // import Slide2 from '$components/slides/2/2.svelte'
+    import Slide1 from '$components/slides/1/1.svelte'
+    // import Slide2 from '$components/slides/1/1.svelte'
     // import Slide3 from '$components/slides/3.svelte'
     // import Slide4 from '$components/slides/4.svelte'
     // import Slide5 from '$components/slides/5.svelte'
@@ -16,7 +16,7 @@
             case 1:
                 return Slide1
             // case 2:
-            //     return Slide2
+            // return Slide2
             // case 3:
             //     return Slide3
             // case 4:

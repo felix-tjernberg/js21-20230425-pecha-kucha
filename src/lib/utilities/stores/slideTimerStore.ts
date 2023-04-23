@@ -19,13 +19,9 @@ function createTimer() {
     }
 
     function changeTimer(newTime: number) {
-        console.log('changeTimer', newTime)
-
         update(() => newTime)
     }
     function reset() {
-        console.log('reset')
-
         update(() => DEFAULT_TIMER_LENGTH)
     }
     function tick() {

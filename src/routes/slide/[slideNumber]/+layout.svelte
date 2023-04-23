@@ -35,8 +35,8 @@
     }
 
     onMount(() => {
-        if ($autoFullscreen) document.documentElement.requestFullscreen()
-        slideTimer.start()
+        // if ($autoFullscreen) document.documentElement.requestFullscreen()
+        // slideTimer.start()
     })
     onDestroy(() => {
         slideTimer.reset()

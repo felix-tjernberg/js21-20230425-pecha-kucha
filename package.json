@@ -29,6 +29,7 @@
     },
     "type": "module",
     "dependencies": {
+        "vite-imagetools": "^4.0.19",
         "zod": "^3.21.4"
     }
 }
