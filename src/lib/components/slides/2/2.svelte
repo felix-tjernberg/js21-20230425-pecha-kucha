@@ -15,10 +15,6 @@
     import figmaMeta from './figma.png?&meta'
 </script>
 
-<svelte:head>
-    <meta name="description" content="Why storybook?" />
-</svelte:head>
-
 <Layout type="columns" numberOfElements={3}>
     <Picture
         sources={[{ type: 'avif', srcset: figmaSrcset }]}

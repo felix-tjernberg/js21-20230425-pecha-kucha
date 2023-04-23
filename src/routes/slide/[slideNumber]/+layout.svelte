@@ -62,7 +62,10 @@
 </script>
 
 <svelte:head>
-    <title>{`Pecha Kucha Slide ${data.slideNumber}`}</title>
+    <title>{`Pecha Kucha 20230425 Slide  ${data.slideNumber}`}</title>
+    <meta
+        name="description"
+        content={`Pecha Kucha 20230425 slide ${data.slideNumber}`} />
 </svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
@@ -105,6 +108,9 @@
 </main>
 
 <style>
+    main {
+        max-height: 100vh;
+    }
     .info-layer,
     .controls-layer {
         display: grid;

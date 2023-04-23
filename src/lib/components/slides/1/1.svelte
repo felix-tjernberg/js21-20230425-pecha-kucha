@@ -11,10 +11,6 @@
     import foreverAloneMeta from './foreverAlone.png?&meta'
 </script>
 
-<svelte:head>
-    <meta name="description" content="Why storybook?" />
-</svelte:head>
-
 <Layout type="columns" numberOfElements={2}>
     <Picture
         sources={[{ type: 'avif', srcset: foreverAloneSrcset }]}
