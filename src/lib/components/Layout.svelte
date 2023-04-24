@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte'
+    import { scale } from 'svelte/transition'
     import { z } from 'zod'
 
     const TypeSchema = z.enum(['rows', 'columns', 'area'])
@@ -67,7 +68,7 @@
     })
 </script>
 
-<section bind:this={section} class={classString} style={styleString}>
+<section in:scale bind:this={section} class={classString} style={styleString}>
     <slot />
 </section>
 
