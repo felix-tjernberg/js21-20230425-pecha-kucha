@@ -17,7 +17,7 @@
     <Picture
         sources={[]}
         meta={{
-            src: 'https://i.imgflip.com/7j9m76.gif',
+            src: 'https://i.imgflip.com/7j9shz.gif',
             alt: 'mister bean looking at time in a field',
             height: 203,
             width: 360

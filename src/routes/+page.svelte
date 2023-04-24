@@ -8,8 +8,8 @@
 </script>
 
 <svelte:head>
-    <title>Pecha Kucha 2023 04 05</title>
-    <meta name="description" content="Pecha Kucha 2023 04 05 presentation" />
+    <title>Pecha Kucha 2023 04 25</title>
+    <meta name="description" content="Pecha Kucha 2023 04 25 presentation" />
 </svelte:head>
 
 <audio bind:this={audioPlayer} src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Local%20Forecast.mp3" />
@@ -37,7 +37,7 @@
 </header>
 <div>
     <section class="glass-background">
-        <h1>Pecha Kucha 2023 04 05</h1>
+        <h1>Pecha Kucha 2023 04 25</h1>
         <a href="/slide/1">Start slides</a>
     </section>
 </div>
