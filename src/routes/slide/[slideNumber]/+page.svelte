@@ -2,7 +2,7 @@
     import Slide1 from '$components/slides/1/1.svelte'
     import Slide2 from '$components/slides/2/2.svelte'
     import Slide3 from '$components/slides/3/3.svelte'
-    // import Slide4 from '$components/slides/4/4.svelte'
+    import Slide4 from '$components/slides/4/4.svelte'
     // import Slide5 from '$components/slides/5/5.svelte'
     // import Slide6 from '$components/slides/6/6.svelte'
     // import Slide7 from '$components/slides/7/7.svelte'
@@ -28,8 +28,8 @@
                 return Slide2
             case 3:
                 return Slide3
-            // case 4:
-            //     return Slide4
+            case 4:
+                return Slide4
             // case 5:
             //     return Slide5
             // case 6:
