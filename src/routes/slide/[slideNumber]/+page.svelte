@@ -8,7 +8,7 @@
     import Slide7 from '$components/slides/7/7.svelte'
     import Slide8 from '$components/slides/8/8.svelte'
     import Slide9 from '$components/slides/9/9.svelte'
-    // import Slide10 from '$components/slides/10/10.svelte'
+    import Slide10 from '$components/slides/10/10.svelte'
     // import Slide11 from '$components/slides/11/11.svelte'
     // import Slide12 from '$components/slides/12/12.svelte'
     // import Slide13 from '$components/slides/13/13.svelte'
@@ -40,8 +40,8 @@
                 return Slide8
             case 9:
                 return Slide9
-            // case 10:
-            //     return Slide10
+            case 10:
+                return Slide10
             // case 11:
             //     return Slide11
             // case 12:
