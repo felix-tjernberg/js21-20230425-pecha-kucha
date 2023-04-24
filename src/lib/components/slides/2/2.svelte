@@ -16,7 +16,7 @@
 </script>
 
 <Layout type="columns" numberOfElements={3}>
-    <Picture sources={[{ type: 'avif', srcset: figmaSrcset }]} meta={figmaMeta} />
-    <Picture sources={[{ type: 'avif', srcset: storybookSrcset }]} meta={storybookMeta} />
-    <Picture sources={[{ type: 'avif', srcset: svelteKitSrcset }]} meta={svelteKitMeta} />
+    <Picture sources={[{ type: 'avif', srcset: figmaSrcset }]} meta={figmaMeta} maxHeight={512} />
+    <Picture sources={[{ type: 'avif', srcset: storybookSrcset }]} meta={storybookMeta} maxHeight={512} />
+    <Picture sources={[{ type: 'avif', srcset: svelteKitSrcset }]} meta={svelteKitMeta} maxHeight={512} />
 </Layout>

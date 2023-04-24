@@ -10,15 +10,7 @@
     import Slide9 from '$components/slides/9/9.svelte'
     import Slide10 from '$components/slides/10/10.svelte'
     import Slide11 from '$components/slides/11/11.svelte'
-    // import Slide12 from '$components/slides/12/12.svelte'
-    // import Slide13 from '$components/slides/13/13.svelte'
-    // import Slide14 from '$components/slides/14/14.svelte'
-    // import Slide15 from '$components/slides/15/15.svelte'
-    // import Slide16 from '$components/slides/16/16.svelte'
-    // import Slide17 from '$components/slides/17/17.svelte'
-    // import Slide18 from '$components/slides/18/18.svelte'
-    // import Slide19 from '$components/slides/19/19.svelte'
-    // import Slide20 from '$components/slides/20/20.svelte'
+    import Rest from '$components/slides/Rest.svelte'
 
     function selectComponent(number: number) {
         switch (number) {
@@ -44,24 +36,8 @@
                 return Slide10
             case 11:
                 return Slide11
-            // case 12:
-            //     return Slide12
-            // case 13:
-            //     return Slide13
-            // case 14:
-            //     return Slide14
-            // case 15:
-            //     return Slide15
-            // case 16:
-            //     return Slide16
-            // case 17:
-            //     return Slide17
-            // case 18:
-            //     return Slide18
-            // case 19:
-            //     return Slide19
-            // case 20:
-            //     return Slide20
+            case 12:
+                return Rest
         }
     }
 

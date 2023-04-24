@@ -4,7 +4,7 @@
     import { MAX_SLIDE_NUMBER, MIN_SLIDE_NUMBER } from '$components/slides/numberOfSlides'
 
     import { autoFullscreen } from '$utilities/stores/fullscreenStore'
-    import { slideTimer } from '$utilities/stores/slideTimerStore'
+    import { slideTimer } from '$stores/slideTimerStore'
 
     export let data
 
@@ -32,8 +32,8 @@
     }
 
     onMount(() => {
-        // if ($autoFullscreen) document.documentElement.requestFullscreen()
-        // slideTimer.start()
+        if ($autoFullscreen) document.documentElement.requestFullscreen()
+        slideTimer.start()
     })
     onDestroy(() => {
         slideTimer.reset()
