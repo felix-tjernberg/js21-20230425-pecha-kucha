@@ -11,13 +11,15 @@
     import uExampleMeta from './uExample.png?&meta'
 </script>
 
-<Layout type="columns" numberOfElements={2}>
-    <Picture
-        sources={[{ type: 'avif', srcset: uSrcset }]}
-        meta={uMeta}
-        maxWidth={300} />
-    <Picture
-        sources={[{ type: 'avif', srcset: uExampleSrcset }]}
-        meta={uExampleMeta}
-        maxHeight={720} />
-</Layout>
+<div class="uccp-slides">
+    <Layout type="columns" template={['1fr', '2fr']}>
+        <Picture
+            sources={[{ type: 'avif', srcset: uSrcset }]}
+            meta={uMeta}
+            maxWidth={300} />
+        <Picture
+            sources={[{ type: 'avif', srcset: uExampleSrcset }]}
+            meta={uExampleMeta}
+            maxHeight={720} />
+    </Layout>
+</div>

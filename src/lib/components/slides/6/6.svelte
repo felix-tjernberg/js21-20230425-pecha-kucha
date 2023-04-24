@@ -11,7 +11,7 @@
     import ccExampleMeta from './ccExample.png?&meta'
 </script>
 
-<Layout type="columns" numberOfElements={2}>
+<Layout type="columns" template={['1fr', '2fr']}>
     <Picture
         sources={[{ type: 'avif', srcset: ccSrcset }]}
         meta={ccMeta}
