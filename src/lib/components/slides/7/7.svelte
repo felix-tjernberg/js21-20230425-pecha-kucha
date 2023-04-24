@@ -12,11 +12,6 @@
 </script>
 
 <Layout type="columns" template={['1fr', '2fr']}>
-    <Picture
-        sources={[{ type: 'avif', srcset: pSrcset }]}
-        meta={pMeta}
-        maxWidth={300} />
-    <Picture
-        sources={[{ type: 'avif', srcset: pExampleSrcset }]}
-        meta={pExampleMeta} />
+    <Picture sources={[{ type: 'avif', srcset: pSrcset }]} meta={pMeta} maxWidth={300} />
+    <Picture sources={[{ type: 'avif', srcset: pExampleSrcset }]} meta={pExampleMeta} />
 </Layout>

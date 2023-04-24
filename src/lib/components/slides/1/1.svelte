@@ -12,8 +12,6 @@
 </script>
 
 <Layout type="columns" numberOfElements={2}>
-    <Picture
-        sources={[{ type: 'avif', srcset: foreverAloneSrcset }]}
-        meta={foreverAloneMeta} />
+    <Picture sources={[{ type: 'avif', srcset: foreverAloneSrcset }]} meta={foreverAloneMeta} />
     <Picture sources={[{ type: 'avif', srcset: whatSrcset }]} meta={whatMeta} />
 </Layout>

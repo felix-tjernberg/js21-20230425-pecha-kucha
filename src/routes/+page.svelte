@@ -12,9 +12,7 @@
     <meta name="description" content="Pecha Kucha 2023 04 05 presentation" />
 </svelte:head>
 
-<audio
-    bind:this={audioPlayer}
-    src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Local%20Forecast.mp3" />
+<audio bind:this={audioPlayer} src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Local%20Forecast.mp3" />
 <header class="controls-layer">
     <div class="hover-container">
         <div class="container">
@@ -24,18 +22,11 @@
             <button
                 style="margin-top: 1em;"
                 on:click={() => {
-                    audioPlayer.paused
-                        ? audioPlayer.play()
-                        : audioPlayer.pause()
+                    audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause()
                 }}>
                 Toggle music
             </button>
-            <input
-                type="range"
-                bind:value={$audioVolume}
-                step="0.01"
-                min="0"
-                max="1" />
+            <input type="range" bind:value={$audioVolume} step="0.01" min="0" max="1" />
             <p style="font-size: 0.5em;">
                 Local Forecast- Elevator Kevin MacLeod (incompetech.com)<br />
                 Licensed under Creative Commons: By Attribution 3.0<br />

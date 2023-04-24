@@ -1,10 +1,7 @@
 <script lang="ts">
     import { goto } from '$app/navigation'
     import { onDestroy, onMount } from 'svelte'
-    import {
-        MAX_SLIDE_NUMBER,
-        MIN_SLIDE_NUMBER
-    } from '$components/slides/numberOfSlides'
+    import { MAX_SLIDE_NUMBER, MIN_SLIDE_NUMBER } from '$components/slides/numberOfSlides'
 
     import { autoFullscreen } from '$utilities/stores/fullscreenStore'
     import { slideTimer } from '$utilities/stores/slideTimerStore'
@@ -63,9 +60,7 @@
 
 <svelte:head>
     <title>{`Pecha Kucha 20230425 Slide  ${data.slideNumber}`}</title>
-    <meta
-        name="description"
-        content={`Pecha Kucha 20230425 slide ${data.slideNumber}`} />
+    <meta name="description" content={`Pecha Kucha 20230425 slide ${data.slideNumber}`} />
 </svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
@@ -74,9 +69,7 @@
         <div class="container">
             <button on:click={toggleFullScreen}>Toggle fullscreen</button>
             <div>
-                <button on:click={() => gotoSlide('prev')}>
-                    Previous slide
-                </button>
+                <button on:click={() => gotoSlide('prev')}> Previous slide </button>
                 <button on:click={slideTimer.start}>start</button>
                 <button on:click={slideTimer.stop}>stop</button>
                 <button on:click={slideTimer.reset}>reset</button>

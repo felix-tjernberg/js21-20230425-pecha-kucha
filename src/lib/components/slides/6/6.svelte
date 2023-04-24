@@ -12,12 +12,6 @@
 </script>
 
 <Layout type="columns" template={['1fr', '2fr']}>
-    <Picture
-        sources={[{ type: 'avif', srcset: ccSrcset }]}
-        meta={ccMeta}
-        maxWidth={300} />
-    <Picture
-        sources={[{ type: 'avif', srcset: ccExampleSrcset }]}
-        meta={ccExampleMeta}
-        maxHeight={720} />
+    <Picture sources={[{ type: 'avif', srcset: ccSrcset }]} meta={ccMeta} maxWidth={300} />
+    <Picture sources={[{ type: 'avif', srcset: ccExampleSrcset }]} meta={ccExampleMeta} maxHeight={720} />
 </Layout>

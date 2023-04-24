@@ -10,24 +10,12 @@
     export let maxHeight: number | false = false
 </script>
 
-<picture
-    style={maxWidth
-        ? `max-width: ${maxWidth}px`
-        : '' || maxHeight
-        ? `max-height: ${maxHeight}px`
-        : ''}>
+<picture style={maxWidth ? `max-width: ${maxWidth}px` : '' || maxHeight ? `max-height: ${maxHeight}px` : ''}>
     {#each sources as source}
-        <source
-            srcset={source.srcset}
-            type={source.type}
-            media={source.media} />
+        <source srcset={source.srcset} type={source.type} media={source.media} />
     {/each}
     <img
         src={meta.src}
         alt={meta.alt}
-        style={maxWidth
-            ? `max-width: ${maxWidth}px`
-            : '' || maxHeight
-            ? `max-height: ${maxHeight}px`
-            : ''} />
+        style={maxWidth ? `max-width: ${maxWidth}px` : '' || maxHeight ? `max-height: ${maxHeight}px` : ''} />
 </picture>

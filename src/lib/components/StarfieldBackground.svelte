@@ -44,8 +44,7 @@
 
         const putPixel = (x: number, y: number, brightness: number) => {
             const intensity = brightness * 255
-            const rgb =
-                'rgb(' + intensity + ',' + intensity + ',' + intensity + ')'
+            const rgb = 'rgb(' + intensity + ',' + intensity + ',' + intensity + ')'
             c.fillStyle = rgb
             c.fillRect(x, y, 1.5, 1.5)
         }

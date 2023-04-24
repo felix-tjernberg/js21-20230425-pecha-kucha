@@ -25,10 +25,8 @@
     let classString = `${type} ${$$props.class ? $$props.class : ''}`
     let styleString: string = ''
 
-    if (type === TypeSchema.enum.columns)
-        styleString += `--number-of-columns: ${numberOfElements};`
-    if (type === TypeSchema.enum.rows)
-        styleString += `--number-of-rows: ${numberOfElements};`
+    if (type === TypeSchema.enum.columns) styleString += `--number-of-columns: ${numberOfElements};`
+    if (type === TypeSchema.enum.rows) styleString += `--number-of-rows: ${numberOfElements};`
     if (template)
         styleString += `--grid-template: ${template.reduce(
             (previousValue, currentValue) => previousValue + ' ' + currentValue
@@ -121,14 +119,13 @@
         --template-areas: '.one' 'two .' '. three';
     }
     .smiley {
-        --template-areas: '. one . two .' '. . . . .' 'six . . . seven'
-            '. four . five .' '. . three . .';
+        --template-areas: '. one . two .' '. . . . .' 'six . . . seven' '. four . five .' '. . three . .';
         grid-template-rows: 15% 2% 10% 5% 10%;
         place-content: center;
     }
     .random {
-        --template-areas: '. . one . .' '. two . three .' '. . . . .'
-            '. . four . .' 'five . . . six' '. seven . eight .' '. . nine . .';
+        --template-areas: '. . one . .' '. two . three .' '. . . . .' '. . four . .' 'five . . . six'
+            '. seven . eight .' '. . nine . .';
         grid-template-rows: 2fr 1fr 0.5fr 0.5fr 0.5fr 1fr 2fr;
         place-content: center;
     }
